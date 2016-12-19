@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-
+//komentarz na potrzeby testu github-sourcetree
 namespace KoloryWPF.Model
 {
     public class ModelKolor
