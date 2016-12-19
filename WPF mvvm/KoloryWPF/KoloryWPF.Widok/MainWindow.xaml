@@ -1,0 +1,50 @@
+﻿<Window x:Class="KoloryWPF.Widok.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KoloryWPF.Widok"
+        xmlns:vm="clr-namespace:KoloryWPF.ViewModel;assembly=KoloryWPF.ViewModel2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Window.DataContext>
+        <vm:ModelKolorVM />
+    </Window.DataContext>
+    <Window.Resources>
+        <local:ModelToColorConverter x:Key="ModelToColorConverter"/>
+    </Window.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="4*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <Grid Background="{Binding color_RGB, Mode=OneWay, Converter={StaticResource ModelToColorConverter}}" Grid.Row="0"/>
+        <Slider x:Name="slider_R"
+                Grid.Row="1"
+                Maximum="255"
+                Margin="10,10,10,10"
+                Value="{Binding color_R, Mode=TwoWay}"/>
+        <Slider x:Name="slider_G"
+                Grid.Row="2"
+                Maximum="255"
+                Margin="10,10,10,10"
+                Value="{Binding color_G, Mode=TwoWay}"/>
+        <Slider x:Name="slider_B"
+                Grid.Row="3"
+                Maximum="255"
+                Margin="10,10,10,10"
+                Value="{Binding color_B, Mode=TwoWay}"/>
+        <StackPanel Orientation="Horizontal"
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Center"
+                    Grid.Row="5">
+            <TextBlock Grid.Row="5">R:</TextBlock>
+            <TextBlock Grid.Row="5">G:</TextBlock>
+            <TextBlock Grid.Row="5">B:</TextBlock>
+        </StackPanel>
+        
+    </Grid>
+</Window>

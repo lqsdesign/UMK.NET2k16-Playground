@@ -1,0 +1,7 @@
+c:\users\lukasz.bednarek\documents\visual studio 2015\Projects\KoloryWPF\KoloryWPF.ViewModel2\bin\Debug\KoloryWPF.ViewModel2.dll
+c:\users\lukasz.bednarek\documents\visual studio 2015\Projects\KoloryWPF\KoloryWPF.ViewModel2\bin\Debug\KoloryWPF.ViewModel2.pdb
+c:\users\lukasz.bednarek\documents\visual studio 2015\Projects\KoloryWPF\KoloryWPF.ViewModel2\bin\Debug\KoloryWPF.Model.dll
+c:\users\lukasz.bednarek\documents\visual studio 2015\Projects\KoloryWPF\KoloryWPF.ViewModel2\bin\Debug\KoloryWPF.Model.pdb
+c:\users\lukasz.bednarek\documents\visual studio 2015\Projects\KoloryWPF\KoloryWPF.ViewModel2\obj\Debug\KoloryWPF.ViewModel.csprojResolveAssemblyReference.cache
+c:\users\lukasz.bednarek\documents\visual studio 2015\Projects\KoloryWPF\KoloryWPF.ViewModel2\obj\Debug\KoloryWPF.ViewModel2.dll
+c:\users\lukasz.bednarek\documents\visual studio 2015\Projects\KoloryWPF\KoloryWPF.ViewModel2\obj\Debug\KoloryWPF.ViewModel2.pdb
