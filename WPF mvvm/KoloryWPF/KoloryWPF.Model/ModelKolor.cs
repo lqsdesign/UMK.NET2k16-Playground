@@ -46,3 +46,4 @@ namespace KoloryWPF.Model
 
     }
 }
+//komentarz na potrzeby github
