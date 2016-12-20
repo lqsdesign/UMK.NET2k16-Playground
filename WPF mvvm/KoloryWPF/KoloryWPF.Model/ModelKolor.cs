@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-//komentarz na potrzeby testu github-sourcetree
+
 namespace KoloryWPF.Model
 {
     public class ModelKolor
@@ -34,7 +34,7 @@ namespace KoloryWPF.Model
                     this.R = _value;
                     break;
                 case 'G':
-                    this.B = _value;
+                    this.G = _value;
                     break;
                 case 'B':
                     this.B = _value;
@@ -46,4 +46,3 @@ namespace KoloryWPF.Model
 
     }
 }
-//komentarz na potrzeby github

@@ -1,0 +1,28 @@
+﻿<Window x:Class="TextBoxToTextBlock.View.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TextBoxToTextBlock.View"
+        xmlns:vm="clr-namespace:TextBoxToTextBlock.ViewModel;assembly=TextBoxToTextBlock.ViewModel"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Window.DataContext>
+        <vm:Model_VM/>
+    </Window.DataContext>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <TextBox x:Name="tBox"
+                 Grid.Row="0"
+                 Margin="5,5,5,5"
+                 Text="{Binding txt, Mode=TwoWay,
+                        UpdateSourceTrigger=PropertyChanged}"/>
+        <TextBlock x:Name="tBlock"
+                   Grid.Row="1"
+                   Margin="5,5,5,5"
+                   Text="{Binding txt, Mode=OneWay}"/>
+    </Grid>
+</Window>
