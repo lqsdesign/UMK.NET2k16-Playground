@@ -10,19 +10,35 @@
     <Window.DataContext>
         <vm:Model_VM/>
     </Window.DataContext>
+    <Window.Resources>
+        <local:ColorConverter x:Key="konwerter"/>
+    </Window.Resources>
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="1*"/>
             <RowDefinition Height="1*"/>
         </Grid.RowDefinitions>
-        <TextBox x:Name="tBox"
+        <ScrollViewer Grid.Row="0">
+            <TextBox x:Name="tBox"
                  Grid.Row="0"
                  Margin="5,5,5,5"
                  Text="{Binding txt, Mode=TwoWay,
-                        UpdateSourceTrigger=PropertyChanged}"/>
-        <TextBlock x:Name="tBlock"
+                        UpdateSourceTrigger=PropertyChanged}"
+                 TextWrapping="Wrap"
+                 AcceptsReturn="True"
+                 ScrollViewer.VerticalScrollBarVisibility="Auto"
+                 ScrollViewer.CanContentScroll="True"/>   
+        </ScrollViewer>
+        <ScrollViewer Grid.Row="1">
+            <TextBlock x:Name="tBlock"
                    Grid.Row="1"
                    Margin="5,5,5,5"
-                   Text="{Binding txt, Mode=OneWay}"/>
+                   Text="{Binding txt, Mode=OneWay}"
+                   Foreground="{Binding txt, Mode=OneWay, Converter={StaticResource konwerter}}"
+                   TextWrapping="Wrap"
+                   ScrollViewer.VerticalScrollBarVisibility="Auto"
+                   ScrollViewer.CanContentScroll="True"/>
+        </ScrollViewer>
+        
     </Grid>
 </Window>
