@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextBoxLabel", "Zadania_22_10_2k16\TextBoxLabel.csproj", "{863ED20B-70A4-4390-BD34-8E33877812BA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ButtonsMatrix", "ButtonsMatrix\ButtonsMatrix.csproj", "{343FA702-2E41-494C-BFB8-D232322CBFA3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PictureBox", "PictureBox\PictureBox.csproj", "{15FCC811-A060-46B2-9EA6-A687B2670486}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{863ED20B-70A4-4390-BD34-8E33877812BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{863ED20B-70A4-4390-BD34-8E33877812BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{863ED20B-70A4-4390-BD34-8E33877812BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{863ED20B-70A4-4390-BD34-8E33877812BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{343FA702-2E41-494C-BFB8-D232322CBFA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{343FA702-2E41-494C-BFB8-D232322CBFA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{343FA702-2E41-494C-BFB8-D232322CBFA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{343FA702-2E41-494C-BFB8-D232322CBFA3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15FCC811-A060-46B2-9EA6-A687B2670486}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15FCC811-A060-46B2-9EA6-A687B2670486}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15FCC811-A060-46B2-9EA6-A687B2670486}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15FCC811-A060-46B2-9EA6-A687B2670486}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

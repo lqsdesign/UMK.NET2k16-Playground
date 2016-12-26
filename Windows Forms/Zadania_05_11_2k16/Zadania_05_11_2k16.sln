@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domek", "Zadania_05_11_2k16\Domek.csproj", "{4E4871F8-C8CA-4FF8-B5D3-554DBDC59833}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PieChart", "PieChart\PieChart.csproj", "{DF472E42-77C0-41C8-AA8E-1CCEF38B06C7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RownanieKwadratoweForms", "RownanieKwadratoweForms\RownanieKwadratoweForms.csproj", "{0179149A-2048-457C-8CCC-64797FDC5D50}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4E4871F8-C8CA-4FF8-B5D3-554DBDC59833}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E4871F8-C8CA-4FF8-B5D3-554DBDC59833}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E4871F8-C8CA-4FF8-B5D3-554DBDC59833}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E4871F8-C8CA-4FF8-B5D3-554DBDC59833}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF472E42-77C0-41C8-AA8E-1CCEF38B06C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF472E42-77C0-41C8-AA8E-1CCEF38B06C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF472E42-77C0-41C8-AA8E-1CCEF38B06C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF472E42-77C0-41C8-AA8E-1CCEF38B06C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0179149A-2048-457C-8CCC-64797FDC5D50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0179149A-2048-457C-8CCC-64797FDC5D50}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0179149A-2048-457C-8CCC-64797FDC5D50}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0179149A-2048-457C-8CCC-64797FDC5D50}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
