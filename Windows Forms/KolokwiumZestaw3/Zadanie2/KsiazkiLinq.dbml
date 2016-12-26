@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Ksiazka" Class="KsiazkiLinqDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Ksiazka.mdf;Integrated Security=True" SettingsObjectName="Zadanie2.Properties.Settings" SettingsPropertyName="KsiazkaConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Ksiazki" Member="Ksiazkis">
+    <Type Name="Ksiazki">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="tytul" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="autor" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="wydawnictwo" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="rokWydania" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="sprzedanych" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Function Name="dbo.ZwiekszSprzedane10" Method="ZwiekszSprzedane10">
+    <Return Type="System.Int32" />
+  </Function>
+</Database>
