@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="DB" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\DB.mdf;Integrated Security=True" SettingsObjectName="PoECT.Model.Properties.Settings" SettingsPropertyName="DBConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Currency_info" Member="Currency_infos">
+    <Type Name="Currency_info">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Currency" Type="System.String" DbType="NVarChar(64) NOT NULL" CanBeNull="false" />
+      <Column Name="Image" Type="System.String" DbType="NVarChar(64)" CanBeNull="true" />
+      <Column Name="Size" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Currency_info_Currency_data" Member="Currency_datas" ThisKey="Id" OtherKey="Cid" Type="Currency_data" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Currency_data" Member="Currency_datas">
+    <Type Name="Currency_data">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Cid" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DATE" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Quantity" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Currency_info_Currency_data" Member="Currency_info" ThisKey="Cid" OtherKey="Id" Type="Currency_info" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Currency_ratio" Member="Currency_ratios">
+    <Type Name="Currency_ratio">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DATA" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Currency" Type="System.String" DbType="NVarChar(64) NOT NULL" CanBeNull="false" />
+      <Column Name="Chaos_ratio" Type="System.Single" DbType="Real NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Config" Member="Configs">
+    <Type Name="Config">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="AccountName" Type="System.String" DbType="NVarChar(64) NOT NULL" CanBeNull="false" />
+      <Column Name="TabIndex" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>
