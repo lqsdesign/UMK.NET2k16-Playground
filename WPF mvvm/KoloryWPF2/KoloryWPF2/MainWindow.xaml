@@ -1,0 +1,24 @@
+﻿<Window x:Class="KoloryWPF2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KoloryWPF2"
+        xmlns:vm="clr-namespace:KoloryWPF2.ViewModel"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="395" Width="525">
+    <Window.DataContext>
+        <vm:EdycjaKoloru/>
+    </Window.DataContext>
+    <Window.Resources>
+        <local:ColorToBrushConverter x:Key="color2brush"/>
+    </Window.Resources>
+    <Grid Margin="0,0,0,4">
+        <Rectangle x:Name="rectangle1" Fill="{Binding Path=Kolor, Mode=OneWay, Converter={StaticResource ResourceKey=color2brush}}" Margin="10,10,10,195" Stroke="Black"/>
+        <Slider x:Name="slider_R" Value="{Binding R, Mode=TwoWay}" Margin="10,0,10,133" Height="39" VerticalAlignment="Bottom" Maximum="255" LargeChange="10" SmallChange="1"/>
+        <Slider x:Name="slider_G" Value="{Binding G, Mode=TwoWay}" Margin="10,0,10,89" VerticalAlignment="Bottom" Height="39" Maximum="255" LargeChange="10" SmallChange="1"/>
+        <Slider x:Name="slider_B" Value="{Binding B, Mode=TwoWay}" Margin="10,0,10,50" VerticalAlignment="Bottom" Height="39" Maximum="255" LargeChange="10" SmallChange="1"/>
+        <Button x:Name="button" Content="Reset" HorizontalAlignment="Left" Margin="10,330,0,0" VerticalAlignment="Top" Width="75" Command="{Binding Resetuj}"/>
+
+    </Grid>
+</Window>

@@ -17,3 +17,6 @@ c:\users\lukasz.bednarek\documents\visual studio 2015\Projects\KoloryWPF\KoloryW
 c:\users\lukasz.bednarek\documents\visual studio 2015\Projects\KoloryWPF\KoloryWPF.Widok\bin\Debug\KoloryWPF.ViewModel2.pdb
 c:\users\lukasz.bednarek\documents\visual studio 2015\Projects\KoloryWPF\KoloryWPF.Widok\bin\Debug\KoloryWPF.Model.pdb
 c:\users\lukasz.bednarek\documents\visual studio 2015\Projects\KoloryWPF\KoloryWPF.Widok\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\Projects\UMK.NET2k16 Playground\WPF mvvm\KoloryWPF\KoloryWPF.Widok\bin\Debug\KoloryWPF.Widok.exe.config
+D:\Projects\UMK.NET2k16 Playground\WPF mvvm\KoloryWPF\KoloryWPF.Widok\obj\Debug\KoloryWPF.Widok.exe
+D:\Projects\UMK.NET2k16 Playground\WPF mvvm\KoloryWPF\KoloryWPF.Widok\obj\Debug\KoloryWPF.Widok.pdb
