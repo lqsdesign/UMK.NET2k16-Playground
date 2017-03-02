@@ -13,7 +13,7 @@ namespace ZadanieUserControlMVVM.ViewModel
     using System.ComponentModel;
     using System.Windows.Input;
 
-    public class FilePathVM
+    public class FilePathVM : INotifyPropertyChanged
     {
         private FilePathModel model = DAL.LoadModel();
 
