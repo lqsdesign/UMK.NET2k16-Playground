@@ -4,7 +4,7 @@ namespace DataAccessLayer
     using ZadanieUserControlMVVM.Properties;
     using ZadanieUserControlMVVM.Model;
 
-    class DAL
+    static class DAL
     {
         public static void SaveModel(FilePathModel model)
         {

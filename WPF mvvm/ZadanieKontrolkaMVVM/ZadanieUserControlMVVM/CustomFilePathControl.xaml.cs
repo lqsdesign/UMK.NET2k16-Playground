@@ -35,17 +35,17 @@ namespace ZadanieUserControlMVVM
 
         #region Commands
 
-        public static readonly DependencyProperty ButtonCommandProperty =
-        DependencyProperty.Register(
-            "ButtonCommand",
-            typeof(ICommand),
-            typeof(CustomFilePathControl));
-
         public ICommand ButtonCommand
         {
             get { return (ICommand)GetValue(ButtonCommandProperty); }
             set { SetValue(ButtonCommandProperty, value); }
         }
+
+        public static readonly DependencyProperty ButtonCommandProperty =
+        DependencyProperty.Register(
+            "ButtonCommand",
+            typeof(ICommand),
+            typeof(CustomFilePathControl));
 
         #endregion
 
