@@ -45,35 +45,5 @@ namespace ZadanieUserControlMVVM.ViewModel
                 onPropertyChanged(nameof(FilePathString));
             }
         }
-
-        private ICommand fileDialog = null;
-
-        public ICommand FileDialog
-        {
-            get
-            {
-                if (fileDialog == null)
-                {
-                    fileDialog = new MvvmCommand(
-                        (object o) => { openFileDialog(); },
-                        (object o) => { return true; });
-                }
-                return fileDialog;
-            }
-        }
-
-
-        private void openFileDialog()
-        {
-            var dialog = new Microsoft.Win32.OpenFileDialog()
-            {
-                Filter = "All *|*.*|JPEG Files (*.jpeg)|*.jpeg|PNG Files (*.png)|*.png|JPG Files (*.jpg)|*.jpg|GIF Files (*.gif)|*.gif"
-            };
-            var result = dialog.ShowDialog();
-            if (result == true)
-            {
-                FilePathString = dialog.FileName;
-            };
-        }
     }
 }

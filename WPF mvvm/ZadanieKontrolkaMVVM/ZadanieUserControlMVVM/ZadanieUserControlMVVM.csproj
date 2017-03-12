@@ -55,6 +55,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="DialogBox.cs" />
     <Compile Include="ViewModel\DAL.cs" />
     <Compile Include="ViewModel\FilePath.ViewModel.cs" />
     <Compile Include="ViewModel\MvvmCommand.cs" />

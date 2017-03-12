@@ -19,9 +19,12 @@
                  Height="23" 
                  Margin="83,10,0,0" 
                  TextWrapping="Wrap" 
-                 Text="{Binding Text, ElementName=root}"
+                 Text="{Binding ElementName=openFileDialogBox, Path=FilePath}"
                  VerticalAlignment="Top" 
                  Width="280"/>
+        <local:OpenFileDialogBox
+            x:Name="openFileDialogBox"
+            />
         <Button x:Name="customButton" 
                 Content="..." 
                 HorizontalAlignment="Left" 
@@ -29,6 +32,6 @@
                 VerticalAlignment="Top" 
                 Width="22" 
                 Height="23"
-                Command="{Binding ButtonCommand, ElementName=root}"/>
+                Command="{Binding ElementName=openFileDialogBox, Path=Show}"/>
     </Grid>
 </UserControl>

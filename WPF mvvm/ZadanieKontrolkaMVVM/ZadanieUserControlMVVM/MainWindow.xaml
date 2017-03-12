@@ -14,7 +14,6 @@
     <Grid Margin="0, 50">
         <local:CustomFilePathControl 
             x:Name ="CustomFilePathControl" 
-            ButtonCommand="{Binding Path=FileDialog}" 
             Text="{Binding FilePathString, Mode=TwoWay}"/>
     </Grid>
 </Window>
