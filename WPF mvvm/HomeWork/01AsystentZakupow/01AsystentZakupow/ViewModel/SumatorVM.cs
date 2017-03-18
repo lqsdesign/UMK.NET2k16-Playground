@@ -26,11 +26,22 @@ namespace _01AsystentZakupow.ViewModel
             }
         }
 
+        public decimal IloscTransakcji
+        {
+            get
+            {
+                return model.IloscTransakcji;
+            }
+        }
+
         private void dodajKwote(decimal kwota)
         {
             if (!czyKwotaPoprawna(kwota))
                 throw new ArgumentOutOfRangeException(nameof(kwota));
             Suma += kwota;
+            model.HistoriaDodaj(Suma);
+            OnPropertyChanged(nameof(Suma));
+            OnPropertyChanged(nameof(IloscTransakcji));
         }
 
         private bool czyKwotaPoprawna(decimal kwota)
@@ -51,7 +62,6 @@ namespace _01AsystentZakupow.ViewModel
                         {
                             decimal kwota = (decimal)parameter;
                             dodajKwote(kwota);
-                            OnPropertyChanged(nameof(Suma));
                         },
                         (object parameter) =>
                         {

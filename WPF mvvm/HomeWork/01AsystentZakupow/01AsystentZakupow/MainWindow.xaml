@@ -20,6 +20,15 @@
             <RowDefinition Height="1*"/>
             <RowDefinition Height="1*"/>
         </Grid.RowDefinitions>
+        <TextBlock Grid.Row="0"
+                   FontSize="10"
+                   VerticalAlignment="Bottom"
+                   HorizontalAlignment="Right"
+                   Margin="10"> 
+            Transakcji: 
+            <Run  FontFamily="Courier New"
+                  Text="{Binding IloscTransakcji, Mode=OneWay}"/>
+        </TextBlock>
         <TextBlock Grid.Row="1"
                    FontSize="30"
                    VerticalAlignment="Center"
