@@ -26,6 +26,22 @@ namespace _01AsystentZakupow.ViewModel
             }
         }
 
+        public decimal Limit
+        {
+            get
+            {
+                return model.Limit;
+            }
+        }
+
+        public decimal MaksymalnaKwota
+        {
+            get
+            {
+                return Limit - Suma;
+            }
+        }
+
         public decimal IloscTransakcji
         {
             get
@@ -42,6 +58,7 @@ namespace _01AsystentZakupow.ViewModel
             model.HistoriaDodaj(Suma);
             OnPropertyChanged(nameof(Suma));
             OnPropertyChanged(nameof(IloscTransakcji));
+            OnPropertyChanged(nameof(MaksymalnaKwota));
         }
 
         private bool czyKwotaPoprawna(decimal kwota)

@@ -13,7 +13,9 @@ namespace _01AsystentZakupow
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
             string text = (string)value;
-            decimal kwota = decimal.Parse(text, culture);
+            decimal kwota = 0;
+            if(decimal.TryParse(text, out kwota))
+            kwota = decimal.Parse(text, culture);
             return kwota;
         }
 
