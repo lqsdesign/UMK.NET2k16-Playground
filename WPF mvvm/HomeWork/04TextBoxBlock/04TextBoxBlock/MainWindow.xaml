@@ -1,0 +1,33 @@
+﻿<Window x:Class="_04TextBoxBlock.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_04TextBoxBlock"
+        xmlns:vm="clr-namespace:_04TextBoxBlock.ViewModel"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Window.DataContext>
+        <vm:textVM />
+    </Window.DataContext>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <TextBox Grid.Row="0"
+                 Margin="5,5,5,5"
+                 TextAlignment="Left"
+                 AcceptsReturn="True"
+                 TextWrapping="Wrap"
+                 Text="{Binding Tekst, Mode=TwoWay,
+                        UpdateSourceTrigger=PropertyChanged}"
+                 />
+        <TextBlock Grid.Row="1"
+                   Margin="5,5,5,5"
+                   TextAlignment="Left"
+                   TextWrapping="Wrap"
+                   Text="{Binding Tekst, Mode=OneWay}"
+                   />
+    </Grid>
+</Window>
