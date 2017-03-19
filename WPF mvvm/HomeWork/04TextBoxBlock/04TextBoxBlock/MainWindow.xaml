@@ -10,6 +10,9 @@
     <Window.DataContext>
         <vm:textVM />
     </Window.DataContext>
+    <Window.Resources>
+        <local:String2ColorConverter x:Key="S2C_converter"/>
+    </Window.Resources>
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="1*"/>
@@ -28,6 +31,8 @@
                    TextAlignment="Left"
                    TextWrapping="Wrap"
                    Text="{Binding Tekst, Mode=OneWay}"
+                   Foreground="{Binding Tekst, Mode=OneWay,
+                                Converter={StaticResource S2C_converter}}"
                    />
     </Grid>
 </Window>
