@@ -1,0 +1,36 @@
+﻿<Window x:Class="PasekPostępuSuwak.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PasekPostępuSuwak"
+        xmlns:vm="clr-namespace:PasekPostępuSuwak.ModelWidoku"
+        xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="240.789" Width="525">
+    <i:Interaction.Behaviors>
+
+    </i:Interaction.Behaviors>
+    <Window.DataContext>
+        <vm:EdycjaWartości />
+    </Window.DataContext>
+    <Window.Resources>
+        <local:Konwerter x:Key="konwerter" />
+    </Window.Resources>
+    <StackPanel>
+        <ProgressBar Height="50" Margin="10,10,10,10" 
+                     Foreground="{Binding Wartość, Mode=OneWay, Converter={StaticResource konwerter}}"
+                     Value="{Binding Wartość, Mode=OneWay}" />
+        <Slider x:Name="MySlider" Height="30" Margin="10,10,10,10" Maximum="100"
+                Value="{Binding Wartość, Mode=TwoWay}" ValueChanged="MySlider_ValueChanged"/>
+        <Button x:Name="button" Content="Resetuj"  FontSize="25"
+                Height="55" Margin="10,10,10,10"
+                Command="{Binding Resetuj}" />
+        <!--
+        bezpośrednie wiązanie kontrolek
+        <ProgressBar Height="50" Margin="10,10,10,10" 
+                     Value="{Binding ElementName=slider, Path=Value}" />
+        <Slider Name="slider" Height="30" Margin="10,10,10,10" Maximum="100" />
+        -->
+    </StackPanel>
+</Window>
