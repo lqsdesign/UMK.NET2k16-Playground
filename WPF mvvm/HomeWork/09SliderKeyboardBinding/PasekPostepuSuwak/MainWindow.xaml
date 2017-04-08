@@ -9,7 +9,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="240.789" Width="525">
     <i:Interaction.Behaviors>
-
+        <local:PressKeyBehavior/>
     </i:Interaction.Behaviors>
     <Window.DataContext>
         <vm:EdycjaWartości />
@@ -22,7 +22,7 @@
                      Foreground="{Binding Wartość, Mode=OneWay, Converter={StaticResource konwerter}}"
                      Value="{Binding Wartość, Mode=OneWay}" />
         <Slider x:Name="MySlider" Height="30" Margin="10,10,10,10" Maximum="100"
-                Value="{Binding Wartość, Mode=TwoWay}" ValueChanged="MySlider_ValueChanged"/>
+                Value="{Binding Wartość, Mode=TwoWay}"/>
         <Button x:Name="button" Content="Resetuj"  FontSize="25"
                 Height="55" Margin="10,10,10,10"
                 Command="{Binding Resetuj}" />

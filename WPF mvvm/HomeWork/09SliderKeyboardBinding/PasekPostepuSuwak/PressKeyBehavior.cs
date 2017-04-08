@@ -8,21 +8,21 @@ using System.Windows.Controls;
 using System.Windows.Interactivity;
 using System.Windows.Input;
 
-namespace PasekPostepuSuwak
+namespace PasekPostępuSuwak
 {
-    class PressKeyBehavior : Behavior<Slider>
+    public class PressKeyBehavior : Behavior<Slider>
     {
         protected override void OnAttached()
         {
             Slider slider = this.AssociatedObject;
-            if (slider != null) slider += AssociatedObject_KeyDown;
+            if (slider != null) slider.KeyDown += AssociatedObject_KeyDown;
         }
 
         private void AssociatedObject_KeyDown(object s, KeyEventArgs e)
         {
-            Window window = s as Window;
-            Slider mySlider = window.FindName("MySlider") as Slider;
-
+            Slider mySlider = s as Slider;
+            
+            
             //mySlider.Value = 50;
         }
 
