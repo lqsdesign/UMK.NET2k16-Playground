@@ -5,8 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:KolokwiumMVVM"
         xmlns:vm="clr-namespace:KolokwiumMVVM.ViewModel"
+        xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
+   
     <Window.DataContext>
         <vm:textVM />
     </Window.DataContext>
@@ -26,7 +28,11 @@
                  TextWrapping="Wrap"
                  Text="{Binding Tekst, Mode=OneWayToSource,
                         UpdateSourceTrigger=PropertyChanged}"
-                 />
+                 >
+            <i:Interaction.Behaviors>
+                <local:BeepSound />
+            </i:Interaction.Behaviors>
+        </TextBox>
         <TextBlock Grid.Row="1"
                    Margin="5,5,5,5"
                    TextAlignment="Left"

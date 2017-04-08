@@ -54,7 +54,12 @@ namespace KolokwiumMVVM.ViewModel
                         },
                         (object o) =>
                         {
-                            if (Tekst.Length > 0) return true;
+                            try
+                            {
+                                if (Tekst.Length > 0) return true;
+                            }
+                            catch { }
+                            
                             return false;
                         });
                 }
