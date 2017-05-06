@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WebApp2</name>
+    </assembly>
+    <members>
+        <member name="T:WebApp2.Controllers.HomeController">
+            <summary>
+            To jest kontroler Home do testów
+            </summary>
+        </member>
+        <member name="M:WebApp2.Controllers.HomeController.Get">
+            <summary>
+            Pobierz dane
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp2.Controllers.HomeController.Get(System.Int32)">
+            <summary>
+            Pobierz dane dla Id
+            </summary>
+            <param name="id">Identyfikator</param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApp2.Controllers.HomeController.Post(WebApp2.Models.InputModels.Home.HomeInputModel)">
+            <summary>
+            Wyślij dane o modelu
+            </summary>
+            <param name="model">Model wejściowy</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
